@@ -1,0 +1,21 @@
+td {
+	border: 1px solid #000000;
+	width: 55px;
+	height: 55px;
+	border-radius:5px;
+}
+
+#zoneDeJeu {
+    display: flex;
+    justify-content: space-around;
+}
+
+#player1{
+    font-size: 1.4em;
+    color:blue;
+}
+
+#player2{
+    font-size: 1.4em;
+    color: red;
+}
