@@ -7,7 +7,7 @@ function PositionArme(elt) {
     
     var positionOk = false; // variable d'etat des cases occupées
     while (positionOk === false) {
-        var tirage = [Math.round(Math.random() * (100))];
+        var tirage = [Math.round(Math.random() * (100 - 1) + 1)];
         var cible = document.getElementById("case" + tirage);
         var etat = cible.getAttribute('class');
         if (etat === null) {
@@ -22,7 +22,7 @@ function PositionJoueur(elt, numero) {
     
     var positionOk = false; // variable d'etat des cases occupées
     while (positionOk === false) {
-        var tirage = [Math.round(Math.random() * (100))];
+        var tirage = [Math.round(Math.random() * (100 - 1) + 1)];
         var cible = document.getElementById("case" + tirage);
         var etat = cible.getAttribute('class');
         if (etat === null) {
@@ -57,7 +57,7 @@ for (var l=1;l<11;l++){
 // Positionnement aléatoire des case inaccessibles, armes et joueurs
 for (i=0;i<6;i++){
     
-var tirage = [Math.round(Math.random()*(100))];
+var tirage = [Math.round(Math.random()*(100 - 1) + 1)];
 console.log(tirage);
     var caseGrise = document.getElementById("case"+ tirage);
     caseGrise.style.backgroundColor="darkgrey";
